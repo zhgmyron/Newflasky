@@ -7,7 +7,7 @@ from ..email import send_email
 from .. import  db
 from ..models import User
 
-@main.route('/',main=['GET','POST'])
+@main.route('/',methods=['GET','POST'])
 def index():
     form = NameForm()
     if form.validate_on_submit():
